@@ -201,8 +201,8 @@ if __name__ == '__main__':
 
     i = 0
     while True:
-        i += 0.1
+        i += 0.2
         transformed_image, transformed_mask = rotate(tensor_image, horizontal=i, vertical=0, canvas_size=(128, 128))
-        save_tensor_image(transformed_image, 'transformed_image.png')
-        save_tensor_image(transformed_mask, 'transformed_mask.png')
-        time.sleep(0.1)
+        save_tensor_image(transformed_image, f'transformed_image.png')
+        save_tensor_image(transformed_mask, f'transformed_mask.png')
+        time.sleep(0.2)
